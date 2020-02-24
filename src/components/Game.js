@@ -22,6 +22,7 @@ class Game extends React.Component {
                 squares: squares
             }),
             xTurn: !this.state.xTurn,
+            turnNumber: history.length
         })
     }
     render() {
