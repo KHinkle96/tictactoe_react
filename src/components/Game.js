@@ -12,6 +12,18 @@ class Game extends React.Component {
             ]
         }
     }
+    handleClick(i) {
+        const history = this.state.history.slice(0,this.state.turnNumber+1)
+        const current = history[history.length-1]
+        const squares = current.squares.slice()
+        squares[i] = this.state.xTurn?'X':'O'
+        this.setState({
+            history: history.concat({
+                squares: squares
+            }),
+            xTurn: !this.state.xTurn,
+        })
+    }
     render() {
         const history = this.state.history;
         const current = history[this.state.turnNumber]
@@ -19,7 +31,7 @@ class Game extends React.Component {
         return (
             <div className="game">
                 <div className="game-board">
-                    <Board onClick={(i)=>this.onClick(i)}
+                    <Board onClick={(i)=>this.handleClick(i)}
                     squares={current.squares} />
                 </div>
             </div>
