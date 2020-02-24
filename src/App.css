@@ -1,0 +1,14 @@
+.Square {
+    background: white;
+    border: 1 px solid darkblue;
+    float: left;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    width: 95px;
+    height: 95px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 95px;
+}
