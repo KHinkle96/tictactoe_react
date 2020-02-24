@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h1 className="title">Tic Tac Toe</h1>
       <div>
-        <p>The first to get three in a row wins!</p>
+        <p className="header">The first to get three in a row wins!</p>
       </div>
       <Game />
     </div>
