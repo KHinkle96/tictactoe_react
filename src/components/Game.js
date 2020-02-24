@@ -16,14 +16,12 @@ class Game extends React.Component {
         const history = this.state.history;
         const current = history[this.state.turnNumber]
 
-
         return (
             <div className="game">
                 <div className="game-board">
                     <Board onClick={(i)=>this.onClick(i)}
                     squares={current.squares} />
                 </div>
-
             </div>
         )
     }
