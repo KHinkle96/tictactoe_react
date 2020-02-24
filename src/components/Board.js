@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Square from './Square';
 
 class Board extends React.Component {
@@ -27,7 +27,6 @@ class Board extends React.Component {
                     {this.renderSquare(7)}
                     {this.renderSquare(8)}
                 </div>
-                 
             </div>
         )
     }
